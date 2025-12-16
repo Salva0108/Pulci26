@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info e Contatti - Pulcinellamente</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica', sans-serif;
+      background-color: #3a5063;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: left;
+      position: relative;
+    }
+
+    header h1 {
+      text-align: left;
+      margin: 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #000;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .header-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons button {
+      padding: 8px 15px;
+      font-size: 1.1em;
+      border: none;
+      background-color: #fff;
+      font-family: 'Playfair Display', serif;
+      cursor: pointer;
+      border-radius: 5px;
+      color: #000;
+      font-weight: bold; /* Aggiunto per il grassetto */
+    }
+
+    .content {
+      padding: 40px 20px;
+    }
+
+    .contact-info {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      font-size: 1.2em;
+      text-align: left;
+      font-family: 'Lora', serif;
+    }
+
+    .contact-info a {
+      color: #FF6347;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .contact-block {
+      flex: 1 1 250px;
+      max-width: 32%;
+      padding: 15px 18px;
+      text-align: center;
+      background-color: #ffffff;
+      color: #000000;
+      border-radius: 10px;
+    }
+
+    .contact-block p {
+      word-break: break-word;
+    }
+
+    /* Mappa e immagini degli ideatori - Responsività */
+    .contact-block img {
+      width: 80px; /* Impostiamo una larghezza massima per le immagini degli ideatori */
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .contact-info img {
+      max-width: 100%; /* Garantisce che la mappa sia responsiva */
+      height: auto;
+    }
+
+    /* Ottimizzazione della mappa per dispositivi mobili */
+    @media (max-width: 768px) {
+      .contact-info img {
+        width: 100%; /* Mappa occupa tutta la larghezza disponibile */
+        max-width: 400px; /* Impedisce che la mappa diventi troppo grande */
+      }
+
+      /* Ideatori - Riduciamo le dimensioni delle immagini per dispositivi mobili */
+      .contact-block img {
+        width: 60px; /* Riduciamo le dimensioni per le immagini degli ideatori */
+        height: 60px;
+      }
+    }
+
+    /* Responsive styles for mobile */
+    @media (max-width: 768px) {
+      .contact-columns {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-block {
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #ffffff;
+        color: #000000;
+        border-radius: 10px;
+      }
+
+      header h1 {
+        font-size: 1.8em;
+        line-height: 80px;
+      }
+
+      .header-buttons button {
+        padding: 10px 12px;
+        font-size: 1em;
+      }
+
+      /* Contenuto degli ideatori */
+      .contact-block {
+        text-align: center;
+      }
+
+      .contact-block img {
+        margin: 0 auto 10px;
+      }
+
+      /* Modifica dimensione della mappa */
+      .contact-block img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .thumbnail {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 10px;
+      }
+
+      .header-buttons {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .header-buttons button {
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+
+    /* Ottimizzazione su schermi molto piccoli */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      .header-buttons button {
+        font-size: 1em;
+        padding: 10px 12px;
+      }
+    }
+
+  </style>
+  <!-- Google Fonts: Playfair Display -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header style="display: flex; justify-content: space-between; align-items: center;">
+    <img src="logo.jpg" alt="Logo Pulcinellamente" style="max-height: 100px; height: auto; width: auto;">
+    <div class="header-buttons">
+      <button onclick="window.location.href='index.html';">Home</button>
+      <button onclick="window.location.href='info.html';">Info e Contatti</button>
+      <button onclick="window.location.href='sponsor.html';">Sponsor</button>
+    </div>
+  </header>
+
+  <div class="content">
+    <h2 style="font-size: 3em; color: #FF6347; font-family: 'Playfair Display', serif;">PulciNellaMente</h2>
+
+    <div class="contact-info">
+      <h3 style="text-align: center;">Info e Contatti</h3>
+      <div class="contact-columns">
+        <div class="contact-block">
+          <h4>Email</h4>
+          <p><a href="javascript:void(0);" onclick="copyToClipboard('info@pulcinellamente.it')">info@pulcinellamente.it</a></p>
+        </div>
+        <div class="contact-block">
+          <h4>Telefono</h4>
+          <p><a href="javascript:void(0);" onclick="copyToClipboard('+39 347 626 1311')">+39 347 626 1311</a></p>
+        </div>
+        <div class="contact-block">
+          <h4>Indirizzo</h4>
+          <p>
+            Via F. Parri, 8<br>
+            81030 Sant'Arpino (CE)
+            <br>
+            <a href="https://www.google.com/maps?q=Via+F.+Parri,+8,+81030+Sant'Arpino+(CE)" target="_blank">
+            <img src="maps.jpg" alt="Visualizza su Google Maps" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 8px;" />
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <h3 style="margin-top: 40px; text-align: center;">Gli ideatori di PulciNellaMente</h3>
+      <div class="contact-columns">
+        <div class="contact-block">
+          <img src="carmela.jpg" alt="Carmela Barbato" class="thumbnail">
+          <div style="word-wrap: break-word; overflow-wrap: break-word;">
+            <p><strong>Carmela Barbato</strong><br>Direzione Culturale<br>
+              Tel. <a href="javascript:void(0);" onclick="copyToClipboard('338 482 1383')">338 482 1383</a><br>
+              <a href="javascript:void(0);" onclick="copyToClipboard('carmelabarbato@gmail.com')">carmelabarbato@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="contact-block">
+          <img src="elpidio.jpg" alt="Elpidio Iorio" class="thumbnail">
+          <p><strong>Elpidio Iorio</strong><br>Direzione Generale<br>
+            Tel. <a href="javascript:void(0);" onclick="copyToClipboard('347 626 1311')">347 626 1311</a><br>
+            <a href="javascript:void(0);" onclick="copyToClipboard('elpidioiorio@libero.it')">elpidioiorio@libero.it</a>
+          </p>
+        </div>
+        <div class="contact-block">
+          <img src="antonio.jpg" alt="Antonio Iavazzo" class="thumbnail">
+          <p><strong>Antonio Iavazzo</strong><br>Direzione Artistica<br>
+            Tel. <a href="javascript:void(0);" onclick="copyToClipboard('338 992 4524')">338 992 4524</a><br>
+            <a href="javascript:void(0);" onclick="copyToClipboard('info@antonioiavazzo.it')">info@antonioiavazzo.it</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function copyToClipboard(text) {
+      var textArea = document.createElement("textarea");
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      alert('Testo copiato: ' + text);
+    }
+  </script>
+
+</body>
+</html>

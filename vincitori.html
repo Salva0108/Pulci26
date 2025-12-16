@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vincitori XXV Edizione - PulciNellaMente</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap" rel="stylesheet">
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  background-color: #3a5063;
+  color: #ffffff;
+  text-align: center;
+}
+
+header {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-buttons button {
+  padding: 8px 15px;
+  font-size: 1.1em;
+  border: none;
+  background-color: transparent;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+  margin-left: 10px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  color: #FF6347;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 40px 0 20px;
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+}
+
+.category {
+  background-color: #ffffff;
+  color: #000;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.category img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+.category .school,
+.category .opera {
+  font-size: 1em;
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .header-buttons button {
+    font-size: 1em;
+    padding: 6px 12px;
+  }
+
+  .category {
+    max-width: 90%;
+  }
+
+  .category-container {
+    gap: 10px;
+  }
+
+  .category .school,
+  .category .opera {
+    font-size: 0.9em;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="Logo Pulcinellamente" style="max-height: 80px;">
+    <div class="header-buttons">
+      <button onclick="window.location.href='index.html';">Home</button>
+      <button onclick="window.location.href='info.html';">Info e Contatti</button>
+      <button onclick="window.location.href='sponsor.html';">Sponsor</button>
+    </div>
+  </header>
+
+  <h1>Vincitori XXV Edizione</h1>
+
+  <!-- Sezione 1 -->
+  <h2>Primi premi Pulcinellamente</h2>
+
+  <div class="category-container">
+    <div class="category">
+      <div class="title">1° PREMIO SEZ. PRIMARIA</div>
+      <img src="img1.jpg" alt="Premio 1">
+      <div class="school">I.C. Mommsen di Roma (Scuola Primaria plesso Giuseppe Verdi) - Roma</div>
+      <div class="opera">Quarantasette - ovvero, tombola con delitto</div>
+    </div>
+
+    <div class="category">
+      <div class="title">1° PREMIO SEZ. MEDIE</div>
+      <img src="img2.jpg" alt="Premio 2">
+      <div class="school">I.C. "Mons. Mario Vassalluzzo" - Roccapiemonte (SA)</div>
+      <div class="opera">Romeo e Giulietta 2.0</div>
+    </div>
+
+    <div class="category">
+      <div class="title">1° PREMIO SEZ.SUPERIORI</div>
+      <img src="img3.jpg" alt="Premio 3">
+      <div class="school">Liceo Classico e Musicale "Cirillo" - Aversa (CE)</div>
+      <div class="opera">SUD</div>
+    </div>
+  </div>
+
+  <!-- Sezione 2 -->
+  <h2>Segnalazioni Pulcinellamente</h2>
+
+  <div class="category-container">
+    <div class="category"><div class="title">PREMIO PARTECIPAZIONE ESEMPLARE</div><img src="s1.jpg" alt="" style="background-color: white;"><div class="school">I.C. “E. De Amicis” - Succivo (CE)</div><div class="opera">Balocchi <br> Una questione di… Costituzione </div></div>
+    <div class="category"><div class="title">PREMIO PARTECIPAZIONE ESEMPLARE</div><img src="s2.jpg" alt="" style="background-color: white;"><div class="school">I.C. "Alto Casertano", Plesso "Rocca d'Evandro” e plesso “Galluccio” (CE)</div><div class="opera">LiberAMIAMO <br>Liberi di respirare </div></div>
+    <div class="category"><div class="title">PREMIO MIGLIORI COREOGRAFIE</div><img src="s3.jpg" alt="" style="background-color: white;"><div class="school">Liceo Classico e delle Scienze Umane "Cagnazzi" - Altamura (BA)</div><div class="opera">Trachinie</div></div>
+    <div class="category"><div class="title">MIGLIORE SCENEGGIATURA</div><img src="s4.jpg" alt="" style="background-color: white;"><div class="school">Liceo Statale Classico e delle Scienze Umane "F. Durante" - Frattamaggiore (NA)</div><div class="opera">Il due per cento</div></div>
+    <div class="category"><div class="title">MIGLIORE ATTORE</div><img src="s5.jpg" alt="" style="background-color: white;"><div class="school">Giovanni Paolo Caiazzo dell’I.C. "Don Diana" - Casal di Principe (CE)</div><div class="opera">Aria</div></div>
+    <div class="category"><div class="title">MIGLIORE ATTRICE</div><img src="s6.jpg" alt="" style="background-color: white;"><div class="school">FRANCESCA DE CRESCENZO dell’ISISS "P. Salvatore Lener"- Marcianise (CE)</div><div class="opera">Leggera come l'aria</div></div>
+    <div class="category"><div class="title">PREMIO CRITICA</div><img src="s7.jpg" alt="" style="background-color: white;"><div class="school">Liceo Classico "P. Giannone"- Caserta</div><div class="opera">After Juliet</div></div>
+  </div>
+
+  <!-- Sezione 3 -->
+  <h2>PulCinemaMente</h2>
+
+  <div class="category-container">
+    <div class="category"><div class="title">MIGLIORE PROGETTO</div><img src="c1.jpg" alt="" style="background-color: white;"><div class="school">I.I.S.S. “G. Dell’Olio” - Bisceglie (BT)</div><div class="opera"></div>Il nostro Pinocchio</div>
+    <div class="category"><div class="title">MIGLIORE VIDEO</div><img src="c2.jpg" alt="" style="background-color: white;"><div class="school">I.C. Piove di Sacco 2- Piove di Sacco (PD)</div><div class="opera">Diversamente italiani</div></div>
+    <div class="category"><div class="title">MIGLIORE VIDEO</div><img src="c2a.jpg" alt="" style="background-color: white;"><div class="school">I.C. "Milani" - Caivano (NA)</div><div class="opera">Aliens: life from silicon</div></div>
+  </div>
+
+  <!-- Sezione 4 -->
+  <h2>Selezione Spulciando</h2>
+
+  <div class="category-container">
+    <div class="category"><div class="title">MIGLIORE INTERPRETAZIONE</div><img src="sp1.jpg" alt="" style="background-color: white;"><div class="school">I.C. "Romeo - Cammisa" - Sant'Antimo (NA)</div><div class="opera">Amici sì, bulli no</div></div>
+    <div class="category"><div class="title">MIGLIORE PROPOSTA</div><img src="sp2.jpg" alt="" style="background-color: white;"><div class="school">I.C. "Santagata" - Gricignano di Aversa (CE)</div><div class="opera">La musica è nu scugnizzo</div></div>
+  </div>
+
+</body>
+</html>

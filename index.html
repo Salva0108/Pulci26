@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pulcinellamente</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap" rel="stylesheet">
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #3a5063;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: #000;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .header-buttons button {
+    padding: 8px 15px;
+    font-size: 1.1em;
+    border: none;
+    background-color: transparent;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .description {
+    max-width: 45%;
+    font-size: 1.2em;
+    font-family: 'Lora', serif;
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  .poster,
+  .buttons {
+    max-width: 45%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3a5063;
+    margin: 20px 0;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .button {
+    display: block;
+    background-color: #FF6347;
+    color: white;
+    padding: 15px 0;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 600px) {
+    .content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .description {
+      font-size: 1em;
+      max-width: 100%;
+      margin: 10px 0;
+    }
+
+    .poster,
+    .buttons {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .poster {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .button {
+      font-size: 1.4em;
+      padding: 16px 0;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .poster img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .header-buttons {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .header-buttons button {
+      margin-top: 10px;
+      width: 100%;
+      text-align: right;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .content {
+      flex-direction: row;
+    }
+
+    .description {
+      max-width: 45%;
+    }
+
+    .poster {
+      max-width: 45%;
+    }
+
+    .sfondo {
+      background-color: transparent;
+    }
+
+    .poster img {
+      max-width: 80%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="Logo Pulcinellamente" style="max-height: 100px;">
+    <div class="header-buttons">
+      <button onclick="window.location.href='index.html';">Home</button>
+      <button onclick="window.location.href='info.html';">Info e Contatti</button>
+      <button onclick="window.location.href='sponsor.html';">Sponsor</button>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="description">
+      <h2 style="font-size: 3em; color: #FF6347; font-family: 'Playfair Display', serif;">Pulcinellamente XXVI</h2>
+      <p>
+        Ritorna, dal 4 al 10 maggio 2026, la Rassegna Nazionale di Teatro – Scuola “PulciNellaMente”. Giunta alla ventiseiesima edizione, è ritenuta tra i più importanti e prestigiosi appuntamenti culturali e di Teatro Scuola in Italia.
+        <br><br>
+        Anche quest’anno, grandissimi e prestigiosi nomi e “firme” illustri saranno nostri compagni di viaggio e la loro preziosa presenza e appoggio ci sosterranno in questa nostra ennesima impresa culturale, e alimenteranno la nostra tenacia nel sostenere l’idea utopica eppure plausibile che è la nostra rassegna.
+        <br><br>
+        Ma, soprattutto, saranno ancora una volta gli sguardi, le intense emozioni delle migliaia di ragazzi e giovani attori che vi parteciperanno che costituiranno nutrimento essenziale e che ci indicheranno la via maestra da seguire.
+      </p>
+    </div>
+
+    <!-- Locandina separata -->
+    <div class="poster">
+      <div class="sfondo">
+        <img src="locandina.jpg" alt="Locandina Pulcinellamente">
+      </div>
+        <a href="A.pdf" target="_blank" class="button">A.Teatro - PulciNellaMente</a>
+        <a href="B.pdf" target="_blank" class="button">B.Corti - PulCinemamente</a>
+        <a href="C.pdf" class="button">C.Sperimentazioni - Spulciando</a>
+    </div>
+  </div>
+
+</body>
+</html>

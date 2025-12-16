@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sponsor - Pulcinellamente</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica', sans-serif;
+      background-color: #3a5063;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    header {
+      flex-direction: row;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      height: 100px;
+      position: relative;
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center;
+    }
+
+    .header-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-buttons button {
+      margin-left: 0;
+      padding: 8px 15px;
+      font-size: 1.1em;
+      border: none;
+      background-color: transparent;
+      font-family: 'Playfair Display', serif;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-size: 3em; 
+      color: #FF6347; 
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 40px;
+    }
+
+    .sponsor-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      gap: 30px;
+    }
+
+    .sponsor-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 200px;
+    }
+
+    .sponsor-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .white-bg {
+      background-color: white;
+      padding: 20px;
+      border-radius: 0;
+    }
+
+    @media (max-width: 768px) {
+      .sponsor-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .sponsor-box {
+        width: 140px;
+        height: 140px;
+      }
+
+      .header-buttons {
+        margin: 10px 0 0 0;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        padding-right: 20px;
+      }
+
+      .header-buttons button {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 1em;
+        padding: 10px 12px;
+      }
+
+      header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+      }
+
+      header img {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .sponsor-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sponsor-box {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header style="display: flex; justify-content: space-between; align-items: center;">
+    <img src="logo.jpg" alt="Logo Pulcinellamente" style="max-height: 100px;">
+    <div class="header-buttons">
+      <button onclick="window.location.href='index.html';">Home</button>
+      <button onclick="window.location.href='info.html';">Info e Contatti</button>
+      <button onclick="window.location.href='sponsor.html';">Sponsor</button>
+    </div>
+  </header>
+
+  <div class="content">
+    <h2 style="font-size: 3em; color: #FF6347; font-family: 'Playfair Display', serif;">I nostri sponsor</h2>
+    <div class="sponsor-grid">
+      <div class="sponsor-box"><img src="sponsor1.jpg" alt="Sponsor 1" style="background-color: white;" /></div>
+      <div class="sponsor-box white-bg"><img src="sponsor2.jpg" alt="Sponsor 2" style="background-color: white;" /></div>
+      <div class="sponsor-box white-bg"><img src="sponsor3.jpg" alt="Sponsor 3" style="background-color: white;" /></div>
+      <div class="sponsor-box"><img src="sponsor4.jpg" alt="Sponsor 4" style="background-color: white;" /></div>
+      <div class="sponsor-box"><img src="sponsor5.jpg" alt="Sponsor 5" style="background-color: white;" /></div>
+      <div class="sponsor-box"><img src="sponsor6.jpg" alt="Sponsor 6" style="background-color: white;" /></div>
+    </div>
+  </div>
+
+</body>
+</html>
